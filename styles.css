@@ -1,0 +1,90 @@
+body {
+
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg'); /* ใส่ที่อยู่ของภาพที่ต้องการใช้ */
+    background-size: cover; /* ทำให้ภาพครอบคลุมทั้งพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
+    background-attachment: fixed; /* ทำให้ภาพพื้นหลังคงที่เมื่อเลื่อนหน้า */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fcefb1;
+    box-shadow: 0 0 10px rgba(43, 2, 230, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #06030a;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.text-box {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #2ba2da;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(235, 233, 233, 0.1);
+  
+}
+
+.text-box h2 {
+    color: #f5f5f5;
+}
+
+.text-box p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #e7e3e31a;
+}
+.highlight {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px; /* เพิ่มมุมโค้งเล็กน้อย */
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Showcase</title>
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+    <style>
+        /* Reset ค่าเริ่มต้น */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth; /* Smooth Scroll เมื่อกดปุ่ม */
+        }
+
+        /* โครงสร้างหลัก */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0eaca;
+            box-shadow: 0 0 10px #fafafa1a;
+            border-radius: 8px;
+        }
+
+        /* หัวข้อ */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+        }
+
+        /* ปุ่มนำทาง */
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* เนื้อหา */
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #362f2f;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(235, 233, 233, 0.1);
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220924/pngtree-abstract-white-gray-gradient-green-background-designed-as-text-backdrop-product-image_1465635.jpg'); /* ใส่ที่อยู่ของภาพที่ต้องการใช้ */
+            background-size: cover; /* ทำให้ภาพครอบคลุมทั้งพื้นที่ */
+            background-position: center; /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
+            background-attachment: fixed; /* ทำให้ภาพพื้นหลังคงที่เมื่อเลื่อนหน้า */
+        }
+
+        .text-box h2 {
+            color: #555;
+        }
+
+        .text-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .image-container {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 50%;
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #f1f0f01a;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <!-- เริ่มต้น Container หลัก -->
+    <div class="container">
+        
+        <!-- ส่วนหัวของหน้าเว็บ -->
+        <header class="header">
+            <h1>Games Showcase</h1>          
+        </header>
+
+        <!-- ปุ่มนำทาง -->
+        <div class="nav-buttons">
+            <a href="#game1">OSU</a>
+            <a href="#game2">Honkai impact 3rd</a>
+            <a href="#game3">Honkai Starrail</a>
+            <a href="#game4">Genshin impact</a>
+            <a href="#game5">Zenless Zone Zero</a>
+            <a href="#mySelf">ผู้จัดทำ</a>
+        </div>
+
+        <!-- เกม 1 -->
+        <section id="game1" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>OSU</h2>
+                    <p>Osu! เป็นเกมแนวจังหวะดนตรีที่ผู้เล่นต้องคลิกหรือกดตามโน้ตที่ปรากฏบนหน้าจอในจังหวะที่ตรงกับเพลง 
+                        เกมนี้มีหลายโหมดและเพลงหลากหลายประเภทให้เลือกเล่น โดยเน้นความเร็วและความแม่นยำในการเล่น</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Osu%21_logo_2024%2C_no_dot.png" alt="Game 1"> <!-- ใส่รูปภาพเกมที่ต้องการ -->
+                </div>              
+            </div>
+            <div class="nav-buttons">
+                <a href="game1.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+        <!-- เกม 2 -->
+        <section id="game2" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>Honkai impact 3rd</h2>
+                    <p>
+                        Honkai Impact 3rd เป็นเกมแอ็กชัน RPG ที่ผู้เล่นจะได้ควบคุมตัวละครสาวนักรบที่มีทักษะและพลังเฉพาะตัว เพื่อต่อสู้กับศัตรูและปกป้องโลกจากพลังร้ายที่เรียกว่า Honkai 
+                        โดยเกมมีเนื้อเรื่องเข้มข้น กราฟิกสวยงาม และระบบการเล่นที่หลากหลาย</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMz6Vt5zs-76l7SqZFMiIaZgtN539W0LJwQ&s" alt="Game 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="game2.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+        <!-- เกม 3 -->
+        <section id="game3" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>Honkai Starrail</h2>
+                    <p>Honkai Star Rail เป็นเกมแนว RPG แบบเทิร์นเบสที่ผสมผสานการสำรวจอวกาศ โดยผู้เล่นจะได้ผจญภัยไปในจักรวาลอันกว้างใหญ่
+                      ควบคุมทีมตัวละครที่มีความสามารถเฉพาะตัวเพื่อเผชิญหน้ากับศัตรูและไขปริศนาต่าง ๆ ในเนื้อเรื่องที่น่าติดตาม</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://cdn2.unrealengine.com/egs-honkaistarrail-cognospherepteltd-ic1-400x400-5bf16a894da6.png?h=270&quality=medium&resize=1&w=480" alt="Game 3">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="game3.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+        <section id="game4" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>Genshin impact</h2>
+                    <p>
+                        Genshin Impact เป็นเกมแนวแอ็กชัน RPG แบบโอเพ่นเวิลด์ที่ให้ผู้เล่นสำรวจโลกแฟนตาซีที่สวยงาม 
+                        ต่อสู้กับศัตรูและทำภารกิจต่าง ๆ โดยใช้ตัวละครที่มีธาตุและความสามารถหลากหลายในการผจญภัย</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPHpfe_BWDsR7RJ0DLCcrGrc3Mu6tBWprhQ&s" alt="Game 4">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="game4.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+        <section id="game5" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>Zenless Zone Zero</h2>
+                    <p>Zenless Zone Zero เป็นเกมแอ็กชัน RPG สไตล์อนิเมะที่เกิดขึ้นในเมืองหลังวันสิ้นโลก 
+                        ผู้เล่นจะได้ควบคุมตัวละครที่มีสไตล์การต่อสู้เฉพาะตัว ออกสำรวจและต่อสู้กับมอนสเตอร์ในโลกที่เต็มไปด้วยความลึกลับและอันตราย</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://static.wikia.nocookie.net/logopedia/images/0/04/Zenless_Zone_Zero_icon.png/revision/latest/scale-to-width-down/250?cb=20240330233650" alt="Game 5">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="game5.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+        <section id="mySelf" class="section">
+            <div class="content">
+                <div class="text-box">
+                    <h2>ผู้จัดทำ</h2>
+                    <p>รายละเอียดเกี่ยวกับผู้จัดทำ </p>
+                </div>
+                <div class="image-container">
+                    <img src="https://scontent.fphs3-1.fna.fbcdn.net/v/t39.30808-1/273412605_2134028416750257_1219631335233121190_n.jpg?stp=dst-jpg_s200x200&_nc_cat=100&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=rbYiUoC8rgsQ7kNvgHXJlpN&_nc_ht=scontent.fphs3-1.fna&oh=00_AYAg5e03IaqoOeU3R9TvDQSZqfS69Tst5IlfwM6V0nKOfg&oe=66D8BB9F" alt="mySelf">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="mySelf.html" class="button">ข้อมูลเพิ่มเติม</a>
+            </div>
+        </section>
+
+    </div>
+    <!-- จบ Container หลัก -->
+
+</body>
+</html>
